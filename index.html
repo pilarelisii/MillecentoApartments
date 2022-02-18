@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Baskervville&family=Libre+Baskerville&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Millecento Apartments</title>
+</head>
+<body>
+    <div class="popup-modal noactivo">
+        <i class="fas fa-times" id="btn-cerrar"></i>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/XDIT2ftrvaI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+
+    <main class="contenedor-main">
+        <nav class="navbar fixed-top navbar-dark navbar-color" id="menu">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#"> <img src="/imagenes/LogoSinTexto.png" width="60px" alt=""></a>
+              <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" 
+              data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="toggler-icon top-bar"></span>
+                <span class="toggler-icon middle-bar"></span>
+                <span class="toggler-icon bottom-bar"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="#elProyecto">Barrio Privado</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#amenities">Amenities</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Master Plan</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#ubicacion">Ubicacion</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#contacto">Contacto</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+        </nav>
+
+        <div class="contenido-main">
+            <img src="/imagenes/logoPNG.png" alt="" width="150px" class="main-logo">
+            <img src="/imagenes/btn-play.png" alt="" width="120px" id="video">
+        </div>
+        
+    </main>
+    
+    <section class="contenedor-proyecto" id="elProyecto">
+        <div class="proyecto">
+            <div class="proyecto-texto">
+            <h1>El Proyecto</h1>
+            <p>Su arquitectura de vanguardia simple y austera proyecto
+                virtuosa genera amplios ambientes iluminados. <br>
+                La relación con el gran parque central es directa.</p>
+            </div>    
+        </div>
+        <div class="imagen-proyecto"></div>
+    </section>
+
+    <section class="contenedor-exterior">
+        <div class="exterior">
+            <div class="exterior-texto">
+                <h1>Espacio exterior y terrazas</h1>
+                <p>Todas las unidades están en relación con el espacio
+                    exterior, cuentan con amplias terrazas y parrillas
+                    individuales con equipamiento.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="contenedor-ambientes">
+        <div class="ambientes">
+            <div class="ambientes-texto">
+            <h1>Ambientes y Funcionalidad</h1>
+            <p>Unidades de 1 a 4 ambientes con la mejor terminación, 
+                diseño y funcionalidad.</p>
+            </div>
+        </div>
+        <div class="imagen-ambientes"></div>
+    </section>
+
+    <section class="contenedor-piscina">
+        <div class="piscina">
+            <div class="piscina-texto">
+            <h1>Piscina y Solarium</h1>
+            <p>El espejo de agua de la piscina y el generoso pulmón
+                verde hacen del lugar un verdadero placer cuando se 
+                regresa al hogar.
+            </p>
+            </div>
+        </div>
+        <div class="imagen-piscina"></div>
+    </section>
+
+    <section class="contenedor-seguridad">
+        <div class="seguridad">
+            <div class="seguridad-texto">
+            <h1>Seguridad</h1>
+            <p>Amplia seguridad en todo el predio con reja y garitas 
+                de vigilancia.
+            </p>
+            </div>
+        </div>
+        <div class="imagen-seguridad"></div>
+    </section>
+
+    <section class="contenedor-amenities" id="amenities">
+        <div class="subcontenedor-amenities">
+            <div class="amenities">
+            <h1>Concept Aménities</h1>
+            <p>Aménities pensados para el disfrute, la relajación y
+                hasta el trabajo en un ambiente relajado.
+            </p>
+            <div class="amenities-contenedores">
+                <p>
+                    <i class="fas fa-swimming-pool" 
+                    tabindex="0" role="button" data-bs-custom-class="info-popover" data-bs-toggle="popover" data-bs-trigger="focus" data-bs-content="Piscina al aire libre de 20m x 5m">
+                    </i> Piscina
+                </p>
+                <p>
+                    <i class="fas fa-briefcase"
+                    tabindex="0" role="button" data-bs-custom-class="info-popover" data-bs-toggle="popover" data-bs-trigger="focus" data-bs-content="Coworking y sala de reuniones">
+                    </i> Sala de reuniones
+                </p>
+                <p>
+                    <i class="fab fa-gripfire"
+                    tabindex="0" role="button" data-bs-custom-class="info-popover" data-bs-toggle="popover" data-bs-trigger="focus" data-bs-content="Parrillas y lugares de esparcimiento">
+                    </i> Parrillas
+                </p>
+                <p>
+                    <i class="fas fa-dumbbell"
+                    tabindex="0" role="button" data-bs-custom-class="info-popover" data-bs-toggle="popover" data-bs-trigger="focus" data-bs-content="Gimnasio completo en P.A. con vista a la piscina">
+                    </i> Gimnasio
+                </p>
+                <p>
+                    <i class="fas fa-key"
+                    tabindex="0" role="button" data-bs-custom-class="info-popover" data-bs-toggle="popover" data-bs-trigger="focus" data-bs-content="30 bauleras ubicadas en el ultimo nivel">
+                    </i> Bauleras
+                </p>
+                <p>
+                    <i class="fas fa-parking"
+                    tabindex="0" role="button" data-bs-custom-class="info-popover" data-bs-toggle="popover" data-bs-trigger="focus" data-bs-content="60 Cocheras en planta baja">
+                    </i> Cocheras
+                </p>
+                <p>
+                    <i class="fas fa-users"
+                    tabindex="0" role="button" data-bs-custom-class="info-popover" data-bs-toggle="popover" data-bs-trigger="focus" data-bs-content="S.U.M. con amplios espacios de uso">
+                    </i> S.U.M.
+                </p>
+                <p>
+                    <i class="fas fa-bicycle"
+                    tabindex="0" role="button" data-bs-custom-class="info-popover" data-bs-toggle="popover" data-bs-trigger="focus" data-bs-content="20 Guardabicicletas">
+                    </i> Guardabicicletas
+                </p>
+                <p>
+                    <i class="fas fa-user-shield"
+                    tabindex="0" role="button" data-bs-custom-class="info-popover" data-bs-toggle="popover" data-bs-trigger="focus" data-bs-content="Seguridad 24 hs con guardia en el acceso">
+                    </i> Seguridad 24HS
+                </p>
+                <p>
+                    <i class="fas fa-pump-soap"
+                    tabindex="0" role="button" data-bs-custom-class="info-popover" data-bs-toggle="popover" data-bs-trigger="focus" data-bs-content="Laundry equipados con lavarropas y secarropas">
+                    </i> Laundry
+                </p>
+            </div>
+            </div>
+        </div>
+        <div class="imagen-amenities"></div>
+    </section>
+
+    <section class="contenedor-ubicacion" id="ubicacion">
+        <div class="ubicacion">
+            <div class="ubicacion-texto">
+                <h1>Ubicación y emplazamiento</h1>
+                <p>Ubicado entre casonas, campos de golf y parques
+                    centenarios, Millecento juega con una serie de 
+                    elementos que lo hacen único.
+                </p>
+            </div>
+        </div>
+        <div class="imagen-ubicacion"></div>
+    </section>
+
+    <section class="contenedor-contacto" id="contacto">
+        <div class="contacto">
+            <div class="contacto-texto">
+                <h1>Contacto</h1>
+                <p>Para conocer más sobre el proyecto escribinos y
+                    un representante se comunicará a la brevedad.</p>
+            </div>
+        </div>
+
+        <div class="contenedor-formulario">
+            <div class="formulario">
+                <form action="">
+                    <input type="text" name="" id="" placeholder="Nombre">
+                    <input type="text" name="" id="" placeholder="Apellido">
+                    <input type="email" name="" id="" placeholder="Email">
+                    <input type="textarea" name="" id="" placeholder="Mensaje">
+                    <input type="submit" value="ENVIAR" id="enviar">
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        
+    </footer>
+    <script src="https://kit.fontawesome.com/6523532a70.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="/js/main.js"></script>
+
+</body>
+</html>
