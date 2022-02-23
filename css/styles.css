@@ -46,7 +46,7 @@
 }
 
 .contenedor-proyecto .imagen-proyecto {
-  background-image: url("./imagenes/proyecto.png");
+  background-image: url("https://github.com/pilarelisii/MillecentoApartments/tree/master/imagenes/proyecto.png");
   background-size: cover;
   -webkit-box-flex: 1;
       -ms-flex: 1;
