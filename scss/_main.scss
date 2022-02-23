@@ -4,7 +4,8 @@ $color-claro: #F2F2F2;
 $color-obscuro: #0D0D0D;
 
 .contenedor-main {
-    background-image: url('/imagenes/amenities.png');
+    //background-image: url('/imagenes/amenities.png');
+    background-image: url('https://github.com/pilarelisii/MillecentoApartments/blob/main/imagenes/amenities.png');
     background-size: cover;
     height: 100vh;
     .navbar {

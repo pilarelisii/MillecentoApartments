@@ -35,7 +35,8 @@ $color-obscuro: #0D0D0D;
             }
         }
    .imagen-proyecto {
-       background-image: url('/imagenes/proyecto.png');
+       //background-image: url('/imagenes/proyecto.png');
+       background-image: url('https://github.com/pilarelisii/MillecentoApartments/blob/main/imagenes/proyecto.png');
        background-size: cover;
         flex: 1;
    }
@@ -46,7 +47,8 @@ $color-obscuro: #0D0D0D;
     height: 90vh;
     display: flex;
     flex-direction: row-reverse;
-    background-image: url('/imagenes/exterior\ 1.png');
+    //background-image: url('/imagenes/exterior\ 1.png');
+    background-image: url('https://github.com/pilarelisii/MillecentoApartments/blob/main/imagenes/exterior\ 1.png');
     background-size: cover;
     .exterior {
         flex: 1;
@@ -97,7 +99,8 @@ $color-obscuro: #0D0D0D;
             }
         }
    .imagen-ambientes {
-       background-image: url('/imagenes/ambientes.png');
+       //background-image: url('/imagenes/ambientes.png');
+       background-image: url('https://github.com/pilarelisii/MillecentoApartments/blob/main/imagenes/ambientes.png');
        background-size: cover;
         flex: 1;
    }
@@ -108,7 +111,8 @@ $color-obscuro: #0D0D0D;
     height: 90vh;
     display: flex;
     flex-direction: row-reverse;
-    background-image: url('/imagenes/piscina\ 1.png');
+    //background-image: url('/imagenes/piscina\ 1.png');
+    background-image: url('https://github.com/pilarelisii/MillecentoApartments/blob/main/imagenes/piscina\ 1.png');
     background-size: cover;
     .piscina {
         flex: 1;
@@ -161,7 +165,8 @@ $color-obscuro: #0D0D0D;
             }
         }
    .imagen-seguridad {
-       background-image: url('/imagenes/seguridad.png');
+       //background-image: url('/imagenes/seguridad.png');
+       background-image: url('https://github.com/pilarelisii/MillecentoApartments/blob/main/imagenes/seguridad.png');
        background-size: cover;
         flex: 1;
    }
@@ -214,7 +219,8 @@ $color-obscuro: #0D0D0D;
             }
         }
    .imagen-amenities {
-       background-image: url('/imagenes/amenities.png');
+       //background-image: url('/imagenes/amenities.png');
+       background-image: url('https://github.com/pilarelisii/MillecentoApartments/blob/main/imagenes/amenities.png');
        background-size: cover;
         flex: 1;
    }
@@ -250,7 +256,8 @@ $color-obscuro: #0D0D0D;
             }
         }
    .imagen-ubicacion {
-       background-image: url('/imagenes/ubicacion.jpg');
+       //background-image: url('/imagenes/ubicacion.jpg');
+       background-image: url('https://github.com/pilarelisii/MillecentoApartments/blob/main/imagenes/ubicacion.jpg');
        background-size: cover;
         flex: 1;
    }
