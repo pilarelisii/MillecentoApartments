@@ -368,7 +368,7 @@
 }
 
 .contenedor-ubicacion .imagen-ubicacion {
-  background-image: url("https://pilarelisii.github.io/MillecentoApartments/css/imagenes/ubicacion.jpg");
+  background-image: url("imagenes/ubicacion.jpg");
   background-size: cover;
   -webkit-box-flex: 1;
       -ms-flex: 1;
@@ -472,7 +472,7 @@
 }
 
 .contenedor-main {
-  background-image: url("https://pilarelisii.github.io/MillecentoApartments/css/imagenes/amenities.png");
+  background-image: url("../imagenes/amenities.png");
   background-size: cover;
   height: 100vh;
 }
