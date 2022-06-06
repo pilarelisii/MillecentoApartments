@@ -35,9 +35,9 @@ $color-obscuro: #0D0D0D;
             }
         }
    .imagen-proyecto {
-       //background-image: url('/imagenes/proyecto.png');
        background-image: url('../imagenes/proyecto.png');
        background-size: cover;
+       background-position: right;
         flex: 1;
    }
 }
@@ -47,7 +47,6 @@ $color-obscuro: #0D0D0D;
     height: 90vh;
     display: flex;
     flex-direction: row-reverse;
-    //background-image: url('/imagenes/exterior\ 1.png');
     background-image: url('../imagenes/exterior%201.png');
     background-size: cover;
     .exterior {
@@ -99,7 +98,7 @@ $color-obscuro: #0D0D0D;
             }
         }
    .imagen-ambientes {
-       //background-image: url('/imagenes/ambientes.png');
+       background-position: center;
        background-image: url('../imagenes/ambientes.png');
        background-size: cover;
         flex: 1;
@@ -111,7 +110,6 @@ $color-obscuro: #0D0D0D;
     height: 90vh;
     display: flex;
     flex-direction: row-reverse;
-    //background-image: url('/imagenes/piscina\ 1.png');
     background-image: url('../imagenes/piscina%201.png');
     background-size: cover;
     .piscina {
@@ -165,7 +163,7 @@ $color-obscuro: #0D0D0D;
             }
         }
    .imagen-seguridad {
-       //background-image: url('/imagenes/seguridad.png');
+       background-position: right;
        background-image: url('../imagenes/seguridad.png');
        background-size: cover;
         flex: 1;
@@ -219,7 +217,7 @@ $color-obscuro: #0D0D0D;
             }
         }
    .imagen-amenities {
-       //background-image: url('/imagenes/amenities.png');
+       background-position: center;
        background-image: url('../imagenes/amenities.png');
        background-size: cover;
         flex: 1;
@@ -253,11 +251,16 @@ $color-obscuro: #0D0D0D;
                     color: $color-claro;
                     line-height: 140%;
                 }
+                .ubi-exacta {
+                    font-weight: 600;
+                    letter-spacing: 1px;
+                    font-size: 1.1rem;
+                }
             }
         }
    .imagen-ubicacion {
-       //background-image: url('/imagenes/ubicacion.jpg');
-       background-image: url('../imagenes/ubicacion.jpg');
+       background-position: right;
+       background-image: url('../imagenes/ubicacion_mapa.jpg');
        background-size: cover;
         flex: 1;
    }
@@ -322,6 +325,455 @@ $color-obscuro: #0D0D0D;
                     background-color: #137985;
                     transition: .3s;
                 }
+            }
+        }
+    }
+}
+//FOOTER
+footer {
+    background-color: #dbdbdb;
+    width: 100%;
+    height: auto;
+    color: $color-obscuro;
+    a {
+        color: $color-obscuro;
+    }
+    .subcontenedor-footer {
+        width: 90%;
+        margin: auto;
+        display: flex;
+        padding: 30px 0 30px 0;
+        justify-content: space-between;
+        .info-footer {
+            display: flex;
+            flex: 1;
+            div {
+               flex: 1;
+               margin: 20px;
+               p{
+                   text-align: center;
+                   line-height: 146%;
+               }
+               .proyectoTituloFooter {
+                    font-weight: 600;
+                    font-size: 1rem;
+               }
+               .proyectoInfoFooter {
+                   font-size: 1rem;
+               }
+               .fa-instagram {
+                   margin-right: 5px;
+                   font-size: 1.1rem;
+               }
+               a {
+                   font-weight: 700;
+               }
+               img {
+                   display: block;
+                   margin: 20px auto;
+               }
+            }
+        }
+        .data-footer {
+            flex: 1;
+            align-self: center;
+            display: flex;
+            justify-content: flex-end;
+            .data-footer_texto {
+                margin-left: 20px;
+                align-self: center;
+                font-size: 1.5rem;
+                
+            }
+        }
+    }
+}
+
+//MedaiQuerys
+@media (max-width: 1500px) {
+    .contenedor-ubicacion {
+        height: 70vh;
+        display: flex;
+        flex-direction: row-reverse;
+       .imagen-ubicacion {
+            flex: 2;
+       }
+    }
+}
+@media (max-width: 1300px) {
+    .contenedor-ubicacion {
+        height: 60vh;
+        display: flex;
+        flex-direction: row-reverse;
+            .ubicacion {
+                flex: 1;
+                .ubicacion-texto {
+                    h1 {
+                        font-size: 2.2rem;
+                    }
+                    p {
+                        font-size: 1rem;
+                    }
+                    .ubi-exacta {
+                        font-size: 1rem;
+                    }
+                }
+            }
+       .imagen-ubicacion {
+            flex: 3;
+       }
+    }
+}
+@media (max-width: 1140px) {
+    .contenedor-ubicacion {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+            .ubicacion {
+                flex: 1;
+                .ubicacion-texto {
+                    h1 {
+                        font-size: 2.7rem;
+                    }
+                    p {
+                        font-size: 1.2rem;
+                    }
+                    .ubi-exacta {
+                        font-size: 1.2rem;
+                    }
+                }
+            }
+        .imagen-ubicacion {
+            flex: 2;
+       }
+    }
+}
+@media (max-width: 980px) {
+    .contenedor-amenities {
+            .subcontenedor-amenities {
+                display: flex;
+                flex-direction: column;
+                .amenities {
+                    width: 80%;
+                    h1 {
+                        font-size: 2.6rem;
+                    }
+                    p {
+                        font-size: 1.2rem;
+                    }
+                    .amenities-contenedores {
+                        display: grid;
+                        grid-template-columns: repeat(5, auto);
+                        gap: 40px;
+                        p {
+                            font-size: 1rem;
+
+                        }
+                        i {
+                            margin: auto;
+                            font-size: 1.9rem;
+                        }
+                    }
+                }
+            }
+       .imagen-amenities {
+           display: none;
+       }
+    }
+    .contenedor-ubicacion {
+        height: 90vh;
+    }
+    footer {
+        .subcontenedor-footer {
+            width: 95%;
+            flex-direction: column;
+        }
+    }
+}
+@media (max-width: 810px) {
+    .contenedor-amenities {
+        .subcontenedor-amenities {
+            .amenities {
+                width: 80%;
+                h1 {
+                    font-size: 2.6rem;
+                }
+                p {
+                    font-size: 1.2rem;
+                }
+                .amenities-contenedores {
+                    gap: 20px;
+                }
+            }
+        }
+    }
+    .contenedor-ubicacion {
+        height: 80vh;
+            .ubicacion {
+                flex: 1;
+                .ubicacion-texto {
+                    h1 {
+                        font-size: 2.4rem;
+                    }
+                    p {
+                        font-size: 1rem;
+                    }
+                    .ubi-exacta {
+                        font-size: 1rem;
+                    }
+                }
+            }
+        .imagen-ubicacion {
+            flex: 2;
+       }
+    }
+}
+@media (max-width: 780px) {
+    .contenedor-proyecto .proyecto .proyecto-texto {
+        width: 80%;
+        h1 {
+            font-size: 2.2rem;
+        }
+        p {
+            font-size: 1.1rem;
+        }
+    }
+    .contenedor-ambientes .ambientes .ambientes-texto {
+        width: 80%;
+        h1 {
+            font-size: 2.2rem;
+        }
+        p {
+            font-size: 1.1rem;
+        }
+    }
+    .contenedor-exterior .exterior .exterior-texto {
+        width: 70%;
+        h1 {
+            font-size: 2.2rem;
+        }
+        p {
+            font-size: 1.1rem;
+        }
+    }
+    .contenedor-piscina .piscina .piscina-texto {
+        width: 70%;
+        h1 {
+            font-size: 2.2rem;
+        }
+        p {
+            font-size: 1.1rem;
+        }
+    }
+    .contenedor-seguridad .seguridad .seguridad-texto {
+        width: 80%;
+        h1 {
+            font-size: 2.2rem;
+        }
+        p {
+            font-size: 1.1rem;
+        }
+    }
+    .contenedor-ubicacion {
+        height: 70vh;
+        display: flex;
+        flex-direction: column;
+            .ubicacion {
+                flex: 1;
+                .ubicacion-texto {
+                    h1 {
+                        font-size: 2.2rem;
+                    }
+                    p {
+                        font-size: 1.1rem;
+                    }
+                    .ubi-exacta {
+                        font-size: 1.1rem;
+                    }
+                }
+            }
+        .imagen-ubicacion {
+            flex: 2;
+       }
+    }
+    .contenedor-contacto .contacto .contacto-texto {
+        width: 80%;
+        h1 {
+            font-size: 2.2rem;
+        }
+        p {
+            font-size: 1.1rem;
+        }
+    }
+    
+    .contenedor-amenities {
+        .subcontenedor-amenities {
+            padding: 5rem 0 5rem 0;
+            .amenities {
+                width: 80%;
+                h1 {
+                    font-size: 2.2rem;
+                }
+                p {
+                    font-size: 1.1rem;
+                }
+                .amenities-contenedores {
+                    display: grid;
+                    grid-template-columns: repeat(2, auto);
+                    gap: 20px;
+                    p {
+                        display: flex;
+                        flex-direction: column;
+                        margin: auto;
+                        font-size: 1rem;
+                        i {
+                            display: block;
+                            margin: auto auto 10px auto;
+                        }
+                }
+                    
+            }
+        }
+    }
+}
+}
+@media (max-width: 720px) {
+    .contenedor-amenities {
+        .subcontenedor-amenities {
+            .amenities {
+                width: 80%;
+                h1 {
+                    font-size: 2.6rem;
+                }
+                p {
+                    font-size: 1.2rem;
+                }
+                .amenities-contenedores {
+                    grid-template-columns: repeat(2, auto);
+                    gap: 22px;
+                    p {
+                        font-size: 1rem;
+
+                    }
+                    i {
+                        margin: auto;
+                        font-size: 2rem;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 600px) {
+    .contenedor-proyecto { 
+        .proyecto .proyecto-texto {
+            width: 90%;
+            h1 {
+                font-size: 2.5rem;
+            }
+            p {
+                font-size: 1.2rem;
+            }
+        }
+        .imagen-proyecto {
+            display: none;
+        }
+    }
+    .contenedor-exterior { 
+        .exterior .exterior-texto {
+            width: 90%;
+            h1 {
+                font-size: 2.5rem;
+            }
+            p {
+                font-size: 1.2rem;
+            }
+        }
+    }
+    .contenedor-ambientes { 
+        .ambientes .ambientes-texto {
+            width: 90%;
+            margin: auto;
+            h1 {
+                font-size: 2.5rem;
+            }
+            p {
+                font-size: 1.2rem;
+            }
+        }
+        .imagen-ambientes {
+            display: none;
+        }
+    }
+    .contenedor-piscina { 
+        .piscina .piscina-texto {
+            width: 90%;
+            h1 {
+                font-size: 2.5rem;
+            }
+            p {
+                font-size: 1.2rem;
+            }
+        }
+    }
+    .contenedor-seguridad { 
+        .seguridad .seguridad-texto {
+            width: 90%;
+            h1 {
+                font-size: 2.5rem;
+            }
+            p {
+                font-size: 1.2rem;
+            }
+        }
+        .imagen-seguridad {
+            display: none;
+        }
+    }
+    .contenedor-ubicacion { 
+        height: 60vh;
+        .ubicacion {
+            padding: 30px 0;
+            .ubicacion-texto {
+                width: 90%;
+                h1 {
+                    font-size: 2.1rem;
+                }
+                p {
+                    font-size: .9rem;
+                }
+            }
+        }
+    }
+    .contenedor-contacto {
+        width: 100%;
+        height: 90vh;
+        display: flex;
+        flex-direction: column;
+        .contacto {
+            background-color: $color-secundario;
+        }
+    }
+    footer {
+        .subcontenedor-footer {
+            .data-footer {
+                .data-footer_texto {
+                    font-size: 1.2rem;
+                }
+            }
+        }
+    }
+    .contenedor-masterplan {
+        .masterplan {
+            width: 95%;
+            h1 {
+                font-size: 1.1rem;
+            }
+            p {
+                font-size: 1rem;
+            }
+            .botones-masterplan {
+                flex-direction: column;
             }
         }
     }

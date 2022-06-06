@@ -4,8 +4,8 @@ $color-claro: #F2F2F2;
 $color-obscuro: #0D0D0D;
 
 .contenedor-main {
-    //background-image: url('/imagenes/amenities.png');
-    background-image: url('../imagenes/amenities.png');
+    background-image: url('../imagenes/main.png');
+    background-position: center;
     background-size: cover;
     height: 100vh;
     .navbar {
@@ -93,10 +93,9 @@ $color-obscuro: #0D0D0D;
     background-color: #1d1d1dc7;
     position: absolute;
     position: fixed;
-    i {
-        font-size: 3rem;
-        color: #ffffff;
+    #btn-cerrar {
         margin: 25px 0 0 25px;
+        cursor: pointer;
     }
     i:hover {
         cursor:pointer;
@@ -166,4 +165,36 @@ $color-obscuro: #0D0D0D;
 }
 .navbar-toggler.collapsed .toggler-icon {
     background-color: #ffffff;
+}
+
+.play-video.no-play {
+    display: none;
+}
+// RESPONSIVE
+@media (max-width: 790px) {
+    .contenedor-main .navbar .container-fluid {
+        width: 100%;
+        margin: 10px auto 0 auto;
+    }
+    .contenedor-main .navbar .container-fluid .navbar-nav {
+        width: 100%;
+    }
+}
+@media (max-width: 550px) {
+    .contenedor-main .navbar .container-fluid .navbar-nav {
+        flex-direction: column;
+        padding: 20px;
+        margin: auto;
+        .nav-item {
+            padding: 8px;
+            margin: auto;
+            display: block;
+        }
+    }
+}
+@media (max-width: 500px) {
+    #btn-cerrar {
+        width: 5%;
+        padding-bottom: 10px;
+    }    
 }
