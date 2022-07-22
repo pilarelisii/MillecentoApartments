@@ -1,15 +1,20 @@
 .contenedor-masterplan {
     width: 100%;
     height: 50vh;
-    background-color: $color-secundario;
+    background-image: url('/imagenes/masterplan.jpg');
+    background-position: center;
+    background-size: cover;
     .masterplan {
         height: 100%;
+        width: 90%;
+        margin: auto;
         color: $color-claro;
         justify-content: center;
         align-items: center;
         display: flex;
         flex-direction: column;
         text-align: center;
+        padding: 20px 0;
             h1 {
                 font-size: 2.8rem;
             }
@@ -25,7 +30,7 @@
             button {
                 outline: none;
                 border:  2px solid white;
-                background-color: $color-secundario;
+                background-color: #0b515936;
                 padding: 10px;
                 border-radius: 8px;
                 font-size: 1.1rem;
@@ -33,8 +38,8 @@
                 margin: 15px 5px 0 5px;
             }
             button:hover {
-                background-color: #336f75;
-                border: 2px solid #336f75;
+                background-color: #33707586;
+                border: 2px solid #33707586;
                 transition: .3s;
             }
     }
@@ -48,17 +53,38 @@
     background-color: #1d1d1dc7;
     position: absolute;
     position: fixed;    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:  center;
 }
 .masterplan-planos {
-    display: flex;
-    align-items: center;
-    width: 80%;
-    height: 80vh;
-    margin: auto;
+    height: auto;
+    .carousel {
+        height: auto;
+    }
+}
+.masterplan-planoGeneral {
+    img {
+        display: flex;
+        justify-content: center;
+        align-items:  center;
+        width: 70%;
+        margin: auto;
+    }
+}
+.carousel-item {
+    img {
+        width: 70%;
+        margin: auto;
+    }
 }
 .cerrar-masterplan {
     margin: 25px 0 0 25px;
     cursor: pointer;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 .popup-masterplan.PB.noactivo {
     display: none
@@ -69,17 +95,28 @@
 .popup-masterplan.SN.noactivo {
     display: none
 }
-.carousel {
-    width: 100%;
-    height: 100%;
+.popup-masterplan.PG.noactivo {
+    display: none;
 }
-.carousel-item img{
-    margin: auto;
+@media (max-width: 900px) {
+    .carousel-item {
+        img {
+            width: 90%;
+        }
+    }
+    .masterplan-planoGeneral {
+        img {
+            width: 90%;
+        }
+    }
 }
-
 @media (max-width: 680px) {
     .popup-masterplan .masterplan-planos{
         width: 100%;
+    }
+    .contenedor-masterplan {
+        height: auto;
+        padding: 15px 0;
     }
 }
 @media (max-width: 530px) {
@@ -89,12 +126,15 @@
     .popup-masterplan .masterplan-planos .carousel-control-next {
         width: 5%;
     }
-}
-@media (max-width: 400px) {
-    .popup-masterplan .masterplan-planos .carousel-control-prev {
-        color: #000;
+    .carousel-item {
+        img {
+            width: 100%;
+            margin: auto;
+        }
     }
-    .popup-masterplan .masterplan-planos .carousel-control-next {
-        color: #000;
+    .masterplan-planoGeneral {
+        img {
+            width: 95%;
+        }
     }
 }

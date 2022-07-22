@@ -18,6 +18,7 @@ $color-obscuro: #0D0D0D;
             background-color: $color-claro;
             flex: 1;
             display: flex;
+            padding: 30px 0;
             .proyecto-texto {
                 width: 70%;
                 margin: auto;
@@ -47,13 +48,14 @@ $color-obscuro: #0D0D0D;
     height: 90vh;
     display: flex;
     flex-direction: row-reverse;
-    background-image: url('../imagenes/exterior%201.png');
+    background-image: url('../imagenes/exterior.png');
     background-size: cover;
     .exterior {
         flex: 1;
         display: flex;
         width: 40%;
         margin: auto;
+        padding: 30px 0;
         .exterior-texto {
             margin-left: 5%;
             align-items: center;
@@ -81,6 +83,7 @@ $color-obscuro: #0D0D0D;
             background-color: $color-secundario;
             flex: 1;
             display: flex;
+            padding: 30px 0;
             .ambientes-texto {
                 width: 70%;
                 margin: auto;
@@ -97,12 +100,24 @@ $color-obscuro: #0D0D0D;
                 }
             }
         }
+    .imagenes-ambientes {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+
+    }
    .imagen-ambientes {
        background-position: center;
        background-image: url('../imagenes/ambientes.png');
        background-size: cover;
         flex: 1;
    }
+   .imagen-ambientes2 {
+    background-position: center;
+    background-image: url('../imagenes/ambientes2.jpg');
+    background-size: cover;
+    flex: 1;
+}
 }
 
 .contenedor-piscina {
@@ -110,13 +125,14 @@ $color-obscuro: #0D0D0D;
     height: 90vh;
     display: flex;
     flex-direction: row-reverse;
-    background-image: url('../imagenes/piscina%201.png');
+    background-image: url('../imagenes/piscina.png');
     background-size: cover;
     .piscina {
         flex: 1;
         display: flex;
         width: 40%;
         margin: auto;
+        padding: 30px 0;
         .piscina-texto {
             margin-left: 5%;
             align-items: center;
@@ -135,8 +151,6 @@ $color-obscuro: #0D0D0D;
     }
 }
 
-
-
 .contenedor-seguridad {
     width: 100%;
     height: 60vh;
@@ -146,6 +160,7 @@ $color-obscuro: #0D0D0D;
             background-color: $color-secundario;
             flex: 1;
             display: flex;
+            padding: 30px 0;
             .seguridad-texto {
                 width: 70%;
                 margin: auto;
@@ -237,6 +252,7 @@ $color-obscuro: #0D0D0D;
             background-color: $color-primario;
             flex: 1;
             display: flex;
+            padding: 30px 0;
             .ubicacion-texto {
                 width: 70%;
                 margin: auto;
@@ -259,7 +275,7 @@ $color-obscuro: #0D0D0D;
             }
         }
    .imagen-ubicacion {
-       background-position: right;
+       background-position: left;
        background-image: url('../imagenes/ubicacion_mapa.jpg');
        background-size: cover;
         flex: 1;
@@ -309,7 +325,20 @@ $color-obscuro: #0D0D0D;
                     border: 2px solid $color-claro;
                     background-color: $color-claro;
                 }
+                #mensaje {
+                    max-height: 150px;
+                    border-radius: 3px;
+                    padding: 8px;
+                    margin: 5px 0;
+                    outline: 0;
+                    border: 0;
+                    border: 2px solid $color-claro;
+                    background-color: $color-claro;
+                }
                 input:focus {
+                    border: 2px solid $color-primario;
+                }
+                textarea:focus {
                     border: 2px solid $color-primario;
                 }
                 #enviar {
@@ -329,7 +358,7 @@ $color-obscuro: #0D0D0D;
         }
     }
 }
-//FOOTER
+//FOOTERs
 footer {
     background-color: #dbdbdb;
     width: 100%;
@@ -538,13 +567,21 @@ footer {
             font-size: 1.1rem;
         }
     }
-    .contenedor-ambientes .ambientes .ambientes-texto {
+    .contenedor-ambientes {
+        flex-direction: column;
+        height: 100vh;
+        .ambientes .ambientes-texto {
         width: 80%;
-        h1 {
-            font-size: 2.2rem;
+            h1 {
+                font-size: 2.2rem;
+            }
+            p {
+                font-size: 1.1rem;
+            }
         }
-        p {
-            font-size: 1.1rem;
+        .imagenes-ambientes {
+            height: auto;
+            flex: 2;
         }
     }
     .contenedor-exterior .exterior .exterior-texto {
@@ -731,7 +768,7 @@ footer {
         }
     }
     .contenedor-ubicacion { 
-        height: 60vh;
+        height: 100vh;
         .ubicacion {
             padding: 30px 0;
             .ubicacion-texto {
@@ -751,7 +788,11 @@ footer {
         display: flex;
         flex-direction: column;
         .contacto {
+            padding: 10px 0 0 0;
             background-color: $color-secundario;
+        }
+        .contenedor-formulario {
+            flex: 3;
         }
     }
     footer {
@@ -776,5 +817,10 @@ footer {
                 flex-direction: column;
             }
         }
+    }
+}
+@media (max-width: 480px) {
+    .contenedor-ubicacion {
+        height: 80vh;
     }
 }

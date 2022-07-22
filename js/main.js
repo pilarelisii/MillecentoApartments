@@ -4,7 +4,7 @@ $('#video').click(function (){
     $('.navbar').addClass('no-navbar');
 });
 $('#btn-cerrar').click(function() {
-    $('.play-video').removeClass('.no-play')
+    $('.play-video').removeClass('no-play')
     $('.popup-modal').addClass('noactivo');
     $('.navbar').removeClass('no-navbar');
 });
@@ -21,7 +21,10 @@ $('#btn-masterplan-SN').click(function (){
     $('.navbar').addClass('no-navbar');
     $('.popup-masterplan.SN').removeClass('noactivo')
 });
-
+$('#btn-masterplan-PG').click(function (){
+    $('.navbar').addClass('no-navbar');
+    $('.popup-masterplan.PG').removeClass('noactivo')
+});
 $('.cerrar-masterplan').click(function() {
     $('.popup-masterplan').addClass('noactivo');
     $('.navbar').removeClass('no-navbar');
@@ -41,6 +44,11 @@ $(window).scroll(function() {
         }
 });
 
+if (window.matchMedia("(max-width: 900px)").matches) {
+    $('.carousel').addClass('carousel-dark')
+  } else {
+    $('.carousel').removeClass('carousel-dark')
+  }
 var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
 var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
 return new bootstrap.Popover(popoverTriggerEl)
